@@ -1,0 +1,142 @@
+.faq {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.faq .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq__header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 48px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq__title {
+  font-family: var(--font-aleo);
+  font-weight: var(--fw-medium);
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1a1a1a;  
+}
+
+.faq__desc {
+  font-family: var(--font-family);
+  font-weight: var(--fw-regular);
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.faq__list {
+  max-width: 800px;
+  margin: 0 auto 72px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.faq-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-item__header::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item__title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding-right: 16px;
+}
+
+.faq-item__icon {
+  flex-shrink: 0;
+  color: #1a1a1a;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-item__icon {
+  transform: rotate(0deg);
+}
+
+.faq-item__text {
+  margin: 16px 0 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.faq__cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq__cta-title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.faq__cta-desc {
+  font-size: 16px;
+  color: #555555;
+  margin: 0;
+}
+
+.faq__cta-btn {
+  margin-top: 8px;
+  padding: 12px 28px;
+  background-color: #f4f4f4;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq__cta-btn:hover {
+  background-color: #e8e8e8;
+}
+
+@media (max-width: 650px) {
+  .faq-item {
+    padding: 18px;
+  }
+  
+  .faq-item__title {
+    font-size: 16px;
+  }
+
+  .faq__cta-title {
+    font-size: 26px;
+  }
+}

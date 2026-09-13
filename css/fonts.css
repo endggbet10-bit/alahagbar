@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Spectral", sans-serif; 
+    src: url("../fonts/Spectral-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spectral", sans-serif; 
+    src: url("../fonts/Spectral-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spectral", sans-serif; 
+    src: url("../fonts/Spectral-Medium.woff2") format(".woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spectral", sans-serif; 
+    src: url("../fonts/Spectral-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aleo", sans-serif; 
+    src: url("../fonts/Aleo-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto", sans-serif; 
+    src: url("../fonts/Roboto_SemiCondensed-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
