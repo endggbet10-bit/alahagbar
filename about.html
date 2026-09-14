@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/about-hero.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/vars.css">
-    <link rel="stylesheet" href="css/about-story.css">
-    <link rel="stylesheet" href="css/advantages-about.css">
-    <link rel="stylesheet" href="css/diplomas.css">
-    <link rel="stylesheet" href="css/cta-about.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header header__container">
-        <img class="logo" src="images/Logo.svg" alt="Логотип">
+        <a href="index.html" class="logo-link">
+          <img class="logo" src="images/Logo.svg" alt="Логотип">
+        </a>
 
         <nav class="header__nav">
           <ul class="nav__list">
@@ -132,6 +126,43 @@
             <div class="diplomas__item">
                 <img src="images/works2.svg" alt="Сертификат Larionic Integral Correction" class="diplomas__image">
             </div>
+
+            <div class="diplomas__item">
+                <img src="images/works3.jpg" alt="Сертификат Larionic Integral Correction" class="diplomas__image">
+            </div>
+        </div>
+
+        <div class="works__video-wrapper">
+            <!-- Превью видео -->
+            <div class="video-preview">
+                <img 
+                    src="images/video-preview.jpg" 
+                    alt="Превью видео" 
+                    class="video-preview__image"
+                >
+                <!-- Кнопка Play -->
+                <button class="video-play-btn" id="playBtn" aria-label="Воспроизвести видео">
+                    <svg class="video-play-btn__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно с видео -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal__overlay" id="modalOverlay"></div>
+        <div class="video-modal__content">
+            <button class="video-modal__close" id="modalClose" aria-label="Закрыть">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <video id="modalVideo" controls>
+                <source src="images/works-video.mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
         </div>
     </div>
 </section>
@@ -152,5 +183,7 @@
     <p class="footer__copy">© 2024 Anti-Aging Specialist. Все права защищены.</p>
   </div>
 </footer>
+
+<script src="js/about.js"></script>
 </body>
 </html>

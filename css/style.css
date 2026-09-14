@@ -1,0 +1,23 @@
+/* 1. Переменные и шрифты */
+@import url('vars.css');
+@import url('fonts.css');
+
+/* 2. Базовые компоненты */
+@import url('header.css');
+@import url('footer.css');
+
+/* 3. Главная страница */
+@import url('hero.css');
+@import url('services.css');
+@import url('advantages.css');
+@import url('popular.css');
+@import url('reviews.css');
+@import url('faq.css');
+@import url('cta.css');
+
+/* 4. Страница "Обо мне" */
+@import url('about-hero.css');
+@import url('about-story.css');
+@import url('advantages-about.css');
+@import url('diplomas.css');
+@import url('cta-about.css');

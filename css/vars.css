@@ -1,0 +1,15 @@
+:root {
+  /* Переменные для семейств шрифтов с безопасными системными фолбеками */
+  --font-spectral: "Spectral", "Georgia", sans-serif;
+  --font-aleo: "Aleo", "Georgia", sans-serif;
+  --font-roboto: "Roboto", system-ui, -apple-system, sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+.container{
+  max-width: 1280px;
+}
